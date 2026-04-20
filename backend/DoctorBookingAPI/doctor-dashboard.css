@@ -1,0 +1,121 @@
+/* BODY */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #eef2f7;
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: linear-gradient(90deg, #2b5876, #4e4376);
+    color: white;
+
+    padding: 15px 25px;
+    margin: 15px;
+    border-radius: 10px;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+/* LOGOUT */
+.logout-btn {
+    background: white;
+    color: #2b5876;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.logout-btn:hover {
+    background: #ddd;
+}
+
+/* TITLE */
+.section-title {
+    text-align: center;
+    margin-top: 20px;
+    color: #333;
+}
+
+/* TABLE */
+.appt-table {
+    width: 85%;
+    margin: 20px auto;
+    border-collapse: collapse;
+
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+/* TABLE HEADER */
+.appt-table thead {
+    background: linear-gradient(90deg, #2b5876, #4e4376);
+    color: white;
+}
+
+/* CELLS */
+.appt-table th,
+.appt-table td {
+    padding: 12px;
+    text-align: center;
+}
+
+/* ROW STRIPES */
+.appt-table tbody tr:nth-child(even) {
+    background: #f2f5fb;
+}
+
+/* HOVER */
+.appt-table tbody tr:hover {
+    background: #e6ecf5;
+}
+
+/* BUTTONS */
+.appt-table button {
+    padding: 6px 10px;
+    margin: 2px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* ACCEPT BUTTON */
+.appt-table button:first-child {
+    background: #28a745;
+    color: white;
+}
+
+/* REJECT BUTTON */
+.appt-table button:last-child {
+    background: #dc3545;
+    color: white;
+}
+.header {
+    display: flex;
+    align-items: center;
+}
+
+/* 🔥 THIS PUSHES BUTTONS TO RIGHT */
+.header-actions {
+    margin-left: auto;   /* 👈 KEY LINE */
+    display: flex;
+    gap: 10px;
+}
+
+/* Button style */
+.action-btn, .logout-btn {
+    background: #ffffff;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}

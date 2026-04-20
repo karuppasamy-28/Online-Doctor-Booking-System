@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Doctor Dashboard</title>
+    <link rel="stylesheet" href="doctor-dashboard.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="header">
+    <h2 id="welcome"></h2>
+
+    <div class="header-actions">
+        <button class="action-btn" onclick="goToReviews()">⭐ My Reviews</button>
+        <button class="logout-btn" onclick="logout()">Logout</button>
+    </div>
+</div>
+
+<h3 class="section-title">My Appointments</h3>
+
+<table class="appt-table">
+    <thead>
+        <tr>
+            <th>Date</th>
+            <th>Time</th>
+            <th>Patient</th>
+            <th>Status</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody id="doctorAppointments"></tbody>
+</table>
+
+<script src="script.js"></script>
+
+<script>
+document.getElementById("welcome").innerText =
+    "Welcome  " + localStorage.getItem("userName");
+
+viewDoctorAppointments();
+</script>
+
+</body>
+</html>

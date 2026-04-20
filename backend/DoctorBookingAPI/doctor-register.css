@@ -1,0 +1,79 @@
+/* 🌈 Background */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #74ebd5, #ACB6E5);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 📦 Center Container */
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 🧾 Card */
+.card {
+    background: white;
+    padding: 30px 40px;
+    border-radius: 15px;
+    width: 350px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+/* 🏷 Title */
+.card h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* ✏ Inputs */
+.card input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.card input:focus {
+    border-color: #6a8cff;
+    box-shadow: 0 0 5px rgba(106,140,255,0.5);
+}
+
+/* 🔘 Button */
+.card button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    background: #6a8cff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.card button:hover {
+    background: #4e6ef2;
+}
+
+/* 🔗 Login link */
+.login-link {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.login-link a {
+    color: #6a8cff;
+    text-decoration: none;
+}

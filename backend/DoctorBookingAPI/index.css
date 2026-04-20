@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+
+    /* Soft gradient background */
+    background: linear-gradient(135deg, #89f7fe, #66a6ff);
+
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Main container */
+.container {
+    text-align: center;
+    background: white;
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* Title */
+.container h1 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Subtitle */
+.subtitle {
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* Buttons */
+.buttons {
+    margin-top: 20px;
+}
+
+/* Common button */
+.btn {
+    text-decoration: none;
+    padding: 12px 25px;
+    margin: 10px;
+    border-radius: 8px;
+    font-size: 16px;
+    color: white;
+    transition: 0.3s;
+}
+
+/* Login button */
+.login {
+    background: #4a7cf7;
+}
+
+/* Register button */
+.register {
+    background: #00c9a7;
+}
+
+/* Hover */
+.btn:hover {
+    opacity: 0.8;
+}

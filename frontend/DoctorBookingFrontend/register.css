@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+
+    /* Soft gradient */
+    background: linear-gradient(135deg, #fddb92, #d1fdff);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Card */
+.register-box {
+    background: white;
+    padding: 35px;
+    border-radius: 12px;
+    width: 320px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* Title */
+.register-box h2 {
+    margin-bottom: 20px;
+}
+
+/* Inputs */
+.register-box input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+/* Button */
+.register-box button {
+    width: 100%;
+    padding: 12px;
+    background: #00c9a7;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    margin-top: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Hover */
+.register-box button:hover {
+    background: #00a98f;
+}
+
+/* Link */
+.link {
+    margin-top: 15px;
+    font-size: 14px;
+}

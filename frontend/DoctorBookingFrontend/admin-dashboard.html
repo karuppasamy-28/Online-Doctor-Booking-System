@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="admin-dashboard.css">
+</head>
+<body>
+
+<div class="header">
+    <h2>Welcome Admin</h2>
+    <button onclick="logout()">Logout</button>
+</div>
+<h3>Add Doctor</h3>
+
+<div class="add-form">
+    <input id="dname" placeholder="Name">
+    <input id="dspec" placeholder="Specialization">
+    <input id="dexp" type="number" placeholder="Experience">
+    <input id="dfees" type="number" placeholder="Fees">
+    <input id="demail" placeholder="Email">
+    <input id="dpass" placeholder="Password">
+    <input id="dimg" placeholder="Image URL">
+
+    <button onclick="addDoctor()">Add Doctor</button>
+</div>
+<h3>Doctors</h3>
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Specialization</th>
+            <th>Status</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody id="doctorTable"></tbody>
+</table>
+
+<h3>Appointments</h3>
+<table>
+    <thead>
+        <tr>
+            <th>Patient</th>
+            <th>Doctor</th>
+            <th>Date</th>
+            <th>Time</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+    <tbody id="appointmentTable"></tbody>
+</table>
+
+<script src="script.js"></script>
+
+<script>
+loadDoctors();
+loadAppointments();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Patient Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="header">
+
+    <h2 id="welcome"></h2>
+
+    <!-- 🔥 RIGHT SIDE CONTROLS -->
+    <div class="header-actions">
+
+        <!-- 🔍 SEARCH -->
+        <input 
+            type="text"
+            id="searchBox"
+            placeholder="Search specialization..."
+            onkeyup="searchDoctors()"
+            class="search-box">
+
+        <!-- 🚪 LOGOUT -->
+        <button class="logout-btn" onclick="logout()">Logout</button>
+
+    </div>
+
+</div>
+
+<!-- 🔔 NOTIFICATIONS -->
+<h3 class="notif-title">Notifications 🔔</h3>
+<div id="notifications" class="notif-container"></div>
+
+<!-- 👨‍⚕️ DOCTORS -->
+<h3 class="section-title">Available Doctors</h3>
+<div id="doctorList" class="grid"></div>
+
+<!-- 📅 APPOINTMENTS -->
+<h3 class="section-title">My Appointments</h3>
+
+<table class="appt-table">
+    <thead>
+        <tr>
+            <th>Date</th>
+            <th>Time</th>
+            <th>Doctor</th>
+            <th>Status</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody id="appointmentsBody"></tbody>
+</table>
+
+<!-- ⭐ REVIEW MODAL -->
+<div id="reviewModal" class="modal">
+    <div class="modal-content">
+        <h3>Rate Doctor</h3>
+
+        <!-- ⭐ STARS -->
+        <div class="stars">
+            <span onclick="setRating(1)">⭐</span>
+            <span onclick="setRating(2)">⭐</span>
+            <span onclick="setRating(3)">⭐</span>
+            <span onclick="setRating(4)">⭐</span>
+            <span onclick="setRating(5)">⭐</span>
+        </div>
+
+        <!-- 📝 COMMENT -->
+        <textarea id="comment" placeholder="Write your feedback..."></textarea>
+
+        <!-- 🔘 BUTTONS -->
+        <button onclick="submitReview()">Submit</button>
+        <button onclick="closeReview()">Cancel</button>
+    </div>
+</div>
+
+<!-- JS -->
+<script src="script.js"></script>
+
+<script>
+document.getElementById("welcome").innerText =
+    "Welcome " + localStorage.getItem("userName");
+
+// Auto load
+viewDoctors();
+viewAppointments();
+loadNotifications();
+
+// 🔄 Auto refresh notifications
+setInterval(loadNotifications, 5000);
+</script>
+
+</body>
+</html>
